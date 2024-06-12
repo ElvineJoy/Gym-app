@@ -1,0 +1,113 @@
+{
+  "users": [
+    {
+      "id": 1,
+      "username": "john_doe",
+      "email": "john@example.com",
+      "password": "hashed_password"
+    },
+    {
+      "id": 2,
+      "username": "jane_smith",
+      "email": "jane@example.com",
+      "password": "hashed_password"
+    }
+  ],
+  "workouts": [
+    {
+      "id": 1,
+      "name": "Full Body Workout",
+      "description": "A comprehensive workout targeting all major muscle groups.",
+      "duration": "60 minutes",
+      "exercises": [1, 2, 3]
+    },
+    {
+      "id": 2,
+      "name": "Upper Body Strength",
+      "description": "Focuses on building strength in the upper body.",
+      "duration": "45 minutes",
+      "exercises": [4, 5, 6]
+    },
+    {
+      "id": 3,
+      "name": "Core Blast",
+      "description": "A high-intensity core workout to strengthen your abs and obliques.",
+      "duration": "30 minutes",
+      "exercises": [7, 8, 9]
+    }
+  ],
+  "exercises": [
+    {
+      "id": 1,
+      "name": "Push-ups",
+      "description": "A classic bodyweight exercise that targets the chest, shoulders, and triceps.",
+      "muscle_groups": ["chest", "shoulders", "triceps"],
+      "difficulty": "Beginner",
+      "image_url": "https://example.com/push-ups.jpg"
+    },
+    {
+      "id": 2,
+      "name": "Squats",
+      "description": "A compound exercise that targets the quadriceps, hamstrings, and glutes.",
+      "muscle_groups": ["quadriceps", "hamstrings", "glutes"],
+      "difficulty": "Intermediate",
+      "image_url": "https://example.com/squats.jpg"
+    },
+    {
+      "id": 3,
+      "name": "Pull-ups",
+      "description": "An upper body exercise that targets the back and biceps.",
+      "muscle_groups": ["back", "biceps"],
+      "difficulty": "Advanced",
+      "image_url": "https://example.com/pull-ups.jpg"
+    },
+    {
+      "id": 4,
+      "name": "Bench Press",
+      "description": "A classic chest exercise performed with a barbell.",
+      "muscle_groups": ["chest", "shoulders", "triceps"],
+      "difficulty": "Intermediate",
+      "image_url": "https://example.com/bench-press.jpg"
+    },
+    {
+      "id": 5,
+      "name": "Bent-over Rows",
+      "description": "A compound exercise targeting the back muscles.",
+      "muscle_groups": ["back", "biceps"],
+      "difficulty": "Intermediate",
+      "image_url": "https://example.com/bent-over-rows.jpg"
+    },
+    {
+      "id": 6,
+      "name": "Shoulder Press",
+      "description": "An overhead pressing exercise for the shoulders.",
+      "muscle_groups": ["shoulders", "triceps"],
+      "difficulty": "Intermediate",
+      "image_url": "https://example.com/shoulder-press.jpg"
+    },
+    {
+      "id": 7,
+      "name": "Plank",
+      "description": "A core exercise that engages multiple muscle groups, including the abs and obliques.",
+      "muscle_groups": ["core"],
+      "difficulty": "Beginner",
+      "image_url": "https://example.com/plank.jpg"
+    },
+    {
+      "id": 8,
+      "name": "Russian Twists",
+      "description": "An exercise to target the obliques and improve rotational strength.",
+      "muscle_groups": ["core", "obliques"],
+      "difficulty": "Intermediate",
+      "image_url": "https://example.com/russian-twists.jpg"
+    },
+    {
+      "id": 9,
+      "name": "Leg Raises",
+      "description": "An exercise for the lower abs and hip flexors.",
+      "muscle_groups": ["core", "lower abs"],
+      "difficulty": "Intermediate",
+      "image_url": "https://example.com/leg-raises.jpg"
+    }
+  ]
+}
