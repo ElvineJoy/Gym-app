@@ -1,44 +1,28 @@
-import React, { useState } from 'react';
+
+import React from 'react';
 
 const Login = () => {
-  const [formData, setFormData] = useState({
-    email: '',
-    password: ''
-  });
-
-  const handleChange = (e) => {
-    const { name, value } = e.target;
-    setFormData({
-      ...formData,
-      [name]: value
-    });
-  }
-
-  const handleSubmit = (e) => {
-    e.preventDefault();
-    // Add your login logic here using formData
-    console.log('Login submitted:', formData);
-  }
+  const handleSubmit = (event) => {
+    event.preventDefault();
+    // Handle login
+  };
 
   return (
     <div>
       <h2>Login</h2>
       <form onSubmit={handleSubmit}>
         <div>
-          <label>Email:</label>
-          <input type="email" name="email" value={formData.email} onChange={handleChange} required />
+          <label htmlFor="username">Username:</label>
+          <input type="text" id="username" name="username" />
         </div>
         <div>
-          <label>Password:</label>
-          <input type="password" name="password" value={formData.password} onChange={handleChange} required />
+          <label htmlFor="password">Password:</label>
+          <input type="password" id="password" name="password" />
         </div>
         <button type="submit">Login</button>
       </form>
     </div>
   );
-}
+};
 
 export default Login;
-
-
-
