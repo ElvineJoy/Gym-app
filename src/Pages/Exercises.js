@@ -13,7 +13,7 @@ function Exercises() {
           .then(response => response.json())
       )
     )
-      .then(data => setExercises(data))
+      .then(data => setExercises(data))     
       .catch(error => console.log(error));
   };
 
@@ -23,8 +23,9 @@ function Exercises() {
         const response = await fetch(`http://localhost:8001/workouts/${id}`);
         const data = await response.json();
         setWorkout(data);
+        console.log(data)
         if (data && data.exercises) {
-          fetchExercises(data.exercises.map(id => String(id))); // Convert IDs to strings here
+          fetchExercises(data.exercises) // Convert IDs to strings here
         }
       } catch (error) {
         console.log(error);
