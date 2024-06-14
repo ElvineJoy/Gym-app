@@ -43,7 +43,7 @@
       "description": "A classic bodyweight exercise that targets the chest, shoulders, and triceps.",
       "muscle_groups": ["chest", "shoulders", "triceps"],
       "difficulty": "Beginner",
-      "image_url": "https://example.com/push-ups.jpg"
+      "image_url": "https://static.vecteezy.com/system/resources/previews/000/162/096/original/man-doing-push-up-vector-illustration.jpg"
     },
     {
       "id": 2,
@@ -51,7 +51,7 @@
       "description": "A compound exercise that targets the quadriceps, hamstrings, and glutes.",
       "muscle_groups": ["quadriceps", "hamstrings", "glutes"],
       "difficulty": "Intermediate",
-      "image_url": "https://example.com/squats.jpg"
+      "image_url": "https://th.bing.com/th/id/OIP.ObkDA02UJZQroKAZgnGP6QHaE8?rs=1&pid=ImgDetMain"
     },
     {
       "id": 3,
@@ -59,7 +59,7 @@
       "description": "An upper body exercise that targets the back and biceps.",
       "muscle_groups": ["back", "biceps"],
       "difficulty": "Advanced",
-      "image_url": "https://example.com/pull-ups.jpg"
+      "image_url": "https://th.bing.com/th/id/R.de99b53d55a83a1a2e255a4eafc66dc4?rik=mXP9eek36Vc0og&riu=http%3a%2f%2fclipart-library.com%2fimage_gallery%2f116143.jpg&ehk=DJ5DTeqXp4gbeuYBiHChUtBKNwuViRGTdHYN5hJ5Pbg%3d&risl=&pid=ImgRaw&r=0&sres=1&sresct=1"
     },
     {
       "id": 4,
@@ -67,7 +67,7 @@
       "description": "A classic chest exercise performed with a barbell.",
       "muscle_groups": ["chest", "shoulders", "triceps"],
       "difficulty": "Intermediate",
-      "image_url": "https://example.com/bench-press.jpg"
+      "image_url": "https://static.vecteezy.com/system/resources/previews/008/056/908/original/man-doing-barbell-bench-press-chest-press-flat-illustration-isolated-on-white-background-free-vector.jpg"
     },
     {
       "id": 5,
@@ -75,7 +75,7 @@
       "description": "A compound exercise targeting the back muscles.",
       "muscle_groups": ["back", "biceps"],
       "difficulty": "Intermediate",
-      "image_url": "https://example.com/bent-over-rows.jpg"
+      "image_url": "https://th.bing.com/th/id/R.ffc77f0a29c0668e1cdba529dda6470f?rik=Cq5KNXvlW6ybdA&pid=ImgRaw&r=0"
     },
     {
       "id": 6,
@@ -83,7 +83,7 @@
       "description": "An overhead pressing exercise for the shoulders.",
       "muscle_groups": ["shoulders", "triceps"],
       "difficulty": "Intermediate",
-      "image_url": "https://example.com/shoulder-press.jpg"
+      "image_url": "https://cdn.shopify.com/s/files/1/1283/2557/files/Shoulder_Press_Muscles_Worked_2048x2048.jpg?v=1657756668"
     },
     {
       "id": 7,
@@ -91,7 +91,7 @@
       "description": "A core exercise that engages multiple muscle groups, including the abs and obliques.",
       "muscle_groups": ["core"],
       "difficulty": "Beginner",
-      "image_url": "https://example.com/plank.jpg"
+      "image_url": "https://th.bing.com/th/id/OIP.2kSfJV3od1tv9VAt91evBAHaDi?rs=1&pid=ImgDetMain"
     },
     {
       "id": 8,
@@ -99,7 +99,7 @@
       "description": "An exercise to target the obliques and improve rotational strength.",
       "muscle_groups": ["core", "obliques"],
       "difficulty": "Intermediate",
-      "image_url": "https://example.com/russian-twists.jpg"
+      "image_url": "https://th.bing.com/th/id/R.df7ec3350af31b70fde53fd049b09bb7?rik=IhpeQ%2f2kaF%2bOcA&pid=ImgRaw&r=0"
     },
     {
       "id": 9,
@@ -107,7 +107,7 @@
       "description": "An exercise for the lower abs and hip flexors.",
       "muscle_groups": ["core", "lower abs"],
       "difficulty": "Intermediate",
-      "image_url": "https://example.com/leg-raises.jpg"
+      "image_url": "https://th.bing.com/th/id/R.286086fb25182f36e2450e66cd0f790d?rik=5ZHo4r3roXcJbA&pid=ImgRaw&r=0"
     }
   ]
 }
