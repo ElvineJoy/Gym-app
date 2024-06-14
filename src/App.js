@@ -3,8 +3,10 @@ import Home from './Pages/Home';
 import Workouts from './Pages/Workouts';
 import Login from './Components/Login';
 import Signup from './Components/Signup';
+import Exercises from './Pages/Exercises';
 import 'bootstrap/dist/css/bootstrap.min.css';
 import React, { useState, useEffect } from 'react';
+
 
 function App() {
   const [workouts, setWorkouts] = useState([]);
@@ -27,12 +29,14 @@ function App() {
 
 
   return (
-    <div>
+   <div>
+      <Exercises workouts={workouts} exercises={exercises}/>
       <Home />
-      <Workouts workouts={workouts} exercises={exercises}/>
-      <Login />
       <Signup />
-    </div>
+      <Login />
+      <Workouts workouts={workouts} />
+
+   </div> 
   );
 }
 

@@ -8,7 +8,7 @@ const Login = () => {
   };
 
   return (
-    <div class= "container-md">
+    <div class= "container-sm">
       <h2 class="text-center">Login</h2>
       <form onSubmit={handleSubmit}>
       <div class="row mb-3">
@@ -33,6 +33,7 @@ const Login = () => {
         <button type="button" class="btn btn-primary btn-sm">Login</button>
       </form>
     </div>
+    
   );
 };
 
