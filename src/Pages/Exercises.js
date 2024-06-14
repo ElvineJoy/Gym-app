@@ -1,44 +1,64 @@
-import React from 'react';
-import { useParams } from 'react-router-dom';
+import React, { useState, useEffect } from 'react';
+import { useParams} from 'react-router-dom';
 
-function Exercises({ workouts, exercises }) {
-  const { workoutId } = useParams();
-  const workout = workouts.find(workout => workout.id === workoutId);
+function Exercises() {
+  const { id } = useParams();
+  const [Workout, setWorkout ] = useState(null);
+  const [exercises, setExercises] = useState([]);
 
-  const getExerciseDetails = (exerciseIds) => {
-    return exerciseIds.map(id => exercises.find(exercise => String(exercise.id) === String(id)));
+  const fetchExercises = (exerciseIds) => {
+    Promise.all(
+      exerciseIds.map(exerciseId =>
+        fetch(`http://localhost:8001/exercises/${id}`)
+          .then(response => response.json())
+      )
+    )
+      .then(data => setExercises(data))
+      .catch(error => console.log(error));
   };
+
+  useEffect(() => {
+    const fetchData = async () => {
+      try {
+        const response = await fetch(`http://localhost:8001/workouts/${id}`);
+        const data = await response.json();
+        setWorkout(data);
+        if (data && data.exercises) {
+          fetchExercises(data.exercises.map(id => String(id))); // Convert IDs to strings here
+        }
+      } catch (error) {
+        console.log(error);
+      }
+    };
+    fetchData();
+  }, [id]); // Include fetchExercises in the dependency array
+
+  if (!Workout) {
+    return <div>Loading...</div>;
+  }
 
   return (
     <div className="container mt-4">
-      {workout ? (
-        <>
-          <h1 className="mb-4">{workout.name} - Exercises</h1>
-          <p>{workout.description}</p>
-          <p><strong>Duration:</strong> {workout.duration}</p>
-          <ul className="list-group list-group-flush">
-            {getExerciseDetails(workout.exercises).map((exercise, index) => (
-              exercise ? (
-                <li className="list-group-item" key={exercise.id}>
-                  <h5>{exercise.name}</h5>
-                  <p>{exercise.description}</p>
-                  <p><strong>Muscle Groups:</strong> {exercise.muscle_groups.join(', ')}</p>
-                  <p><strong>Difficulty:</strong> {exercise.difficulty}</p>
-                  <img src={exercise.image_url} alt={exercise.name} className="img-fluid" />
-                </li>
-              ) : (
-                <li className="list-group-item text-danger" key={index}>
-                  Exercise not found
-                </li>
-              )
-            ))}
-          </ul>
-        </>
-      ) : (
-        <p>Workout not found</p>
-      )}
+      <h1>Exercises:</h1>
+      <div className="row">
+        {exercises.map((exercise, index) => (
+          <div key={`${exercise.id}-${index}`} className="col-md-6">
+            <div className="card mb-4 shadow-sm">
+              <div className="card-body">
+                <h5 className="card-title">{exercise.name}</h5>
+                <p className="card-text">{exercise.description}</p>
+                <p><strong>Muscle Groups:</strong> {exercise.muscle_groups.join(', ')}</p>
+                <p><strong>Difficulty:</strong> {exercise.difficulty}</p>
+                <img src={exercise.image_url} alt={exercise.name} className="img-fluid" />
+              </div>
+            </div>
+          </div>
+        ))}
+      </div>
     </div>
   );
 }
+
+
 
 export default Exercises;

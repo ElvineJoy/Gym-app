@@ -12,7 +12,7 @@ const Login = () => {
       <h2 class="text-center">Login</h2>
       <form onSubmit={handleSubmit}>
       <div class="row mb-3">
-        <label for="inputUsername1" class="col-sm-2 col-form-label">Username:</label>
+        <label htmlFor="inputUsername1" class="col-sm-2 col-form-label">Username:</label>
         <div class="col-sm-10">
          <input type="username" class="form-control" id="inputUsername1" />
        </div>
@@ -29,7 +29,6 @@ const Login = () => {
          <input type="password" class="form-control" id="inputPassword1" />
        </div>
      </div>
-     
         <button type="button" class="btn btn-primary btn-sm">Login</button>
       </form>
     </div>
