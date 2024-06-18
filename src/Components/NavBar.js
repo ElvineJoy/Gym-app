@@ -5,8 +5,8 @@ import './Navbar.css';
 function NavBar() {
   return (
     <div>
-        <nav className="navbar navbar-expand-lg navbar-light bg-info">
-             <div className="container-fluid mx-auto">
+        <nav className="navbar navbar-expand-lg navbar-light bg-dark">
+             <div className="container-fluid mx-auto ">
             <ul className='nav justify-content-end w-100 ml-2' >
                 <li className="nav-item">
                     <NavLink to='/' className="nav-link">Home</NavLink>

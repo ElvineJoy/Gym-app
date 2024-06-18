@@ -18,6 +18,8 @@ function Home() {
   return (
     <>
       <div className="container mt-4">
+        {/* <header>Welcome to our all fitness Gym!!</header> */}
+        <img className="container-fluid mx-auto mt-0" src={require('../images/gym-101.jpg')} alt="fitness101" />
         <h1 className='text-center'>Workouts</h1>
           <div className="row mt-5">
             {workouts.map(workout => (
